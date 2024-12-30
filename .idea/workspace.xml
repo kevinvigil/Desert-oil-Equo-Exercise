@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14412fb9-1428-4572-b797-6d92ae7a8e43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-rest/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-rest/src/main/java/equo/drones/com/ExerciseServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-rest/src/main/java/equo/drones/com/repositories/DroneRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-rest/src/main/java/equo/drones/com/repositories/PlateauRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-rest/src/main/java/equo/drones/com/servicies/DroneService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-rest/src/main/java/equo/drones/com/servicies/PlateauService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-rest/src/test/java/equo/drones/com/ExerciseServerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/equo/drones/com/exeption/DroneOutsidePlateauBoundariesPosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/equo/drones/com/model/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/equo/drones/com/model/Drone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/equo/drones/com/model/Movement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/equo/drones/com/model/Plateau.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/equo/drones/com/model/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/test/java/equo/drones/com/CommandProcessorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,45 +64,45 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortKey" value="BY_TIME_DESCENDING" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.CommandProcessorTest.applyMovementsTestInputGoAutOfRange.executor": "Run",
-    "Gradle.CommandProcessorTest.applyMovementsTestWrongInput.executor": "Run",
-    "Gradle.CommandProcessorTest.executor": "Run",
-    "Gradle.CommandProcessorTest.processCommandTest.executor": "Run",
-    "Gradle.CommandProcessorTest.processCommandTestCorrectInput.executor": "Run",
-    "Gradle.CommandProcessorTest.processCommandTestInputGoAutOfRange.executor": "Run",
-    "Gradle.CommandProcessorTest.processCommandTestWrongInput.executor": "Run",
-    "Gradle.CommandProcessorTest.shouldReachExpectedCoordinatesAndHeading.executor": "Run",
-    "Gradle.CommandProcessorTest.shouldReachExpectedCoordinatesAndHeadingWhenMultipleExecution.executor": "Run",
-    "Gradle.CommandProcessorTest.shouldReachExpectedCoordinatesAndHeadingWhenSingleExecution.executor": "Run",
-    "Gradle.ExerciseServerTest.executor": "Run",
-    "Gradle.ExerciseServerTest.shouldCreateDrone.executor": "Run",
-    "Gradle.ExerciseServerTest.shouldCreatePlateau.executor": "Run",
-    "Gradle.ExerciseServerTest.shouldMoveTheDrone.executor": "Run",
-    "Gradle.ExerciseServerTest.testDroneMoveEndpoint.executor": "Run",
-    "Gradle.Tests in 'desert-oil-exploration-drones'.executor": "Run",
-    "Gradle.desert-oil-exploration-drones [:equo.drones.com.DroneControlServer.main()].executor": "Run",
-    "Gradle.desert-oil-exploration-drones [:equo.drones.com.Main.main()].executor": "Run",
-    "Gradle.desert-oil-exploration-drones:api-rest [:api-rest:equo.drones.com.DroneHttpServer.main()].executor": "Run",
-    "Gradle.desert-oil-exploration-drones:api-rest [:api-rest:equo.drones.com.ExerciseServer.main()].executor": "Run",
-    "Gradle.desert-oil-exploration-drones:api-rest [:api-rest:equo.drones.com.HttpServer.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.CommandProcessorTest.applyMovementsTestInputGoAutOfRange.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CommandProcessorTest.applyMovementsTestWrongInput.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CommandProcessorTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CommandProcessorTest.processCommandTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CommandProcessorTest.processCommandTestCorrectInput.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CommandProcessorTest.processCommandTestInputGoAutOfRange.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CommandProcessorTest.processCommandTestWrongInput.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CommandProcessorTest.shouldReachExpectedCoordinatesAndHeading.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CommandProcessorTest.shouldReachExpectedCoordinatesAndHeadingWhenMultipleExecution.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CommandProcessorTest.shouldReachExpectedCoordinatesAndHeadingWhenSingleExecution.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ExerciseServerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ExerciseServerTest.shouldCreateDrone.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ExerciseServerTest.shouldCreatePlateau.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ExerciseServerTest.shouldMoveTheDrone.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ExerciseServerTest.testDroneMoveEndpoint.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'desert-oil-exploration-drones'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.desert-oil-exploration-drones [:equo.drones.com.DroneControlServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.desert-oil-exploration-drones [:equo.drones.com.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.desert-oil-exploration-drones:api-rest [:api-rest:equo.drones.com.DroneHttpServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.desert-oil-exploration-drones:api-rest [:api-rest:equo.drones.com.ExerciseServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.desert-oil-exploration-drones:api-rest [:api-rest:equo.drones.com.HttpServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/core/src/main/java/equo/drones/com" />
@@ -288,7 +268,8 @@
       <workItem from="1735350899221" duration="6435000" />
       <workItem from="1735392281992" duration="16800000" />
       <workItem from="1735518601116" duration="37901000" />
-      <workItem from="1735599081086" duration="192000" />
+      <workItem from="1735599081086" duration="354000" />
+      <workItem from="1735599483828" duration="2000" />
     </task>
     <servers />
   </component>
