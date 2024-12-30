@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14412fb9-1428-4572-b797-6d92ae7a8e43" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-rest/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-rest/src/main/java/equo/drones/com/ExerciseServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-rest/src/main/java/equo/drones/com/repositories/DroneRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-rest/src/main/java/equo/drones/com/repositories/PlateauRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-rest/src/main/java/equo/drones/com/servicies/DroneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-rest/src/main/java/equo/drones/com/servicies/PlateauService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-rest/src/test/java/equo/drones/com/ExerciseServerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/equo/drones/com/exeption/DroneOutsidePlateauBoundariesPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/equo/drones/com/model/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/equo/drones/com/model/Drone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/equo/drones/com/model/Movement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/equo/drones/com/model/Plateau.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/equo/drones/com/model/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/equo/drones/com/CommandProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="desert-oil-exploration-drones" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Exception" />
+        <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2qpE0C0ypTWacoyYJ5vf7Ksjko5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortKey" value="BY_TIME_DESCENDING" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.CommandProcessorTest.applyMovementsTestInputGoAutOfRange.executor": "Run",
+    "Gradle.CommandProcessorTest.applyMovementsTestWrongInput.executor": "Run",
+    "Gradle.CommandProcessorTest.executor": "Run",
+    "Gradle.CommandProcessorTest.processCommandTest.executor": "Run",
+    "Gradle.CommandProcessorTest.processCommandTestCorrectInput.executor": "Run",
+    "Gradle.CommandProcessorTest.processCommandTestInputGoAutOfRange.executor": "Run",
+    "Gradle.CommandProcessorTest.processCommandTestWrongInput.executor": "Run",
+    "Gradle.CommandProcessorTest.shouldReachExpectedCoordinatesAndHeading.executor": "Run",
+    "Gradle.CommandProcessorTest.shouldReachExpectedCoordinatesAndHeadingWhenMultipleExecution.executor": "Run",
+    "Gradle.CommandProcessorTest.shouldReachExpectedCoordinatesAndHeadingWhenSingleExecution.executor": "Run",
+    "Gradle.ExerciseServerTest.executor": "Run",
+    "Gradle.ExerciseServerTest.shouldCreateDrone.executor": "Run",
+    "Gradle.ExerciseServerTest.shouldCreatePlateau.executor": "Run",
+    "Gradle.ExerciseServerTest.shouldMoveTheDrone.executor": "Run",
+    "Gradle.ExerciseServerTest.testDroneMoveEndpoint.executor": "Run",
+    "Gradle.Tests in 'desert-oil-exploration-drones'.executor": "Run",
+    "Gradle.desert-oil-exploration-drones [:equo.drones.com.DroneControlServer.main()].executor": "Run",
+    "Gradle.desert-oil-exploration-drones [:equo.drones.com.Main.main()].executor": "Run",
+    "Gradle.desert-oil-exploration-drones:api-rest [:api-rest:equo.drones.com.DroneHttpServer.main()].executor": "Run",
+    "Gradle.desert-oil-exploration-drones:api-rest [:api-rest:equo.drones.com.ExerciseServer.main()].executor": "Run",
+    "Gradle.desert-oil-exploration-drones:api-rest [:api-rest:equo.drones.com.HttpServer.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core/src/main/java/equo/drones/com" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="equo.drones.com" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="equo.drones.com" />
+      <recent name="equo.drones.com.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.CommandProcessorTest">
+    <configuration name="CommandProcessorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":core:test" />
+            <option value="--tests" />
+            <option value="&quot;equo.drones.com.CommandProcessorTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CommandProcessorTest.shouldReachExpectedCoordinatesAndHeadingWhenSingleExecution" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":core:test" />
+            <option value="--tests" />
+            <option value="&quot;equo.drones.com.CommandProcessorTest.shouldReachExpectedCoordinatesAndHeadingWhenSingleExecution&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ExerciseServerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":api-rest:test" />
+            <option value="--tests" />
+            <option value="&quot;equo.drones.com.ExerciseServerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ExerciseServerTest.shouldCreateDrone" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":api-rest:test" />
+            <option value="--tests" />
+            <option value="&quot;equo.drones.com.ExerciseServerTest.shouldCreateDrone&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ExerciseServerTest.shouldCreatePlateau" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":api-rest:test" />
+            <option value="--tests" />
+            <option value="&quot;equo.drones.com.ExerciseServerTest.shouldCreatePlateau&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.CommandProcessorTest" />
+        <item itemvalue="Gradle.ExerciseServerTest" />
+        <item itemvalue="Gradle.CommandProcessorTest.shouldReachExpectedCoordinatesAndHeadingWhenSingleExecution" />
+        <item itemvalue="Gradle.ExerciseServerTest.shouldCreateDrone" />
+        <item itemvalue="Gradle.ExerciseServerTest.shouldCreatePlateau" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14412fb9-1428-4572-b797-6d92ae7a8e43" name="Changes" comment="" />
+      <created>1735350898136</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735350898136</updated>
+      <workItem from="1735350899221" duration="6435000" />
+      <workItem from="1735392281992" duration="16800000" />
+      <workItem from="1735518601116" duration="37901000" />
+      <workItem from="1735599081086" duration="192000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
