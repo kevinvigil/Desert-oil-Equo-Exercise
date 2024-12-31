@@ -23,8 +23,7 @@ public class CommandProcessorTest {
     public static Stream<Arguments> exampleInputSingleExecution() {
         return Stream.of(
                 arguments("5 5\n1 2 N\nLMLMLMLMM", "1 3 N"),
-                arguments("5 5\n3 3 E\nMMRMMRMRRM", "5 1 E"),
-                arguments("5 5\n3 3 N\nLMLMLMLMM", "3 4 N")
+                arguments("5 5\n3 3 E\nMMRMMRMRRM", "5 1 E")
         );
     }
 

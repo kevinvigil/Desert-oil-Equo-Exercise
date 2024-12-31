@@ -16,7 +16,7 @@ public class Drone {
 
     /**
      * Creates a new Drone with initial position and facing direction.
-     *
+     * @param plateau  The area were it can move.
      * @param position  Initial x-coordinate and y-coordinate.
      * @param direction Initial facing direction (N, E, S, W).
      */

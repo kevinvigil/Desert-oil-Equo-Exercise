@@ -1,11 +1,14 @@
 package equo.drones.com;
 
 import equo.drones.com.model.Drone;
+import equo.drones.com.model.Plateau;
 import equo.drones.com.repositories.DroneRepository;
 import equo.drones.com.repositories.PlateauRepository;
 import equo.drones.com.servicies.DroneService;
 import equo.drones.com.servicies.PlateauService;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -15,21 +18,34 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.List;
 import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ExerciseServerTest {
-    private static PlateauRepository plateauRepository = PlateauRepository.getInstance();
-    private static PlateauService plateauService = new PlateauService(plateauRepository);
-    private static DroneRepository droneRepository = DroneRepository.getInstance();
-    private static DroneService droneService = new DroneService(droneRepository);
+    private static PlateauRepository plateauRepository;
+    private static PlateauService plateauService;
+    private static DroneRepository droneRepository;
+    private static DroneService droneService;
 
-    private static ExerciseServer server = new ExerciseServer(droneService, plateauService);
+    private static ExerciseServer server;
 
-    @BeforeAll
-    public static void setup() {
+    @BeforeEach
+    public void beforeEach() {
+        PlateauRepository.resetInstance();
+        plateauRepository = PlateauRepository.getInstance();
+        plateauService = new PlateauService(plateauRepository);
+        DroneRepository.resetInstance();
+        droneRepository = DroneRepository.getInstance();
+        droneService = new DroneService(droneRepository);
+        server = new ExerciseServer(droneService, plateauService);
         server.start(8080);
+    }
+
+    @AfterEach
+    public void afterEach() {
+        server.stop();
     }
 
     @Test
@@ -47,7 +63,9 @@ class ExerciseServerTest {
 
         InputStream responseStream = connection.getInputStream();
         String response = new BufferedReader(new InputStreamReader(responseStream)).lines().reduce("", (acc, line) -> acc + line);
-        assertTrue(response.contains("Plateau created"));
+        List<Plateau> plateaus = plateauRepository.getPlateaus();
+        assertEquals(1, plateaus.size());
+        assertTrue(response.contains(plateaus.getFirst().id().toString()));
 
         connection.disconnect();
     }
@@ -68,8 +86,9 @@ class ExerciseServerTest {
         os.close();
         InputStream responseStream = connection.getInputStream();
         String response = new BufferedReader(new InputStreamReader(responseStream)).lines().reduce("", (acc, line) -> acc + line);
-        Drone drone = droneRepository.getDrones().getFirst();
-        assertTrue(response.contains(drone.getId().toString()));
+        List<Drone> drones = droneRepository.getDrones();
+        assertEquals(1, drones.size());
+        assertTrue(response.contains(drones.getFirst().getId().toString()));
         connection.disconnect();
     }
 

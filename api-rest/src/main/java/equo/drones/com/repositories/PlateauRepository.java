@@ -7,14 +7,21 @@ import java.util.logging.Logger;
 
 public class PlateauRepository {
     Logger log = Logger.getLogger(PlateauRepository.class.getName());
-    private static final PlateauRepository REPOSITORY = new PlateauRepository();
+    private static  PlateauRepository repository = null;
 
     private Map<UUID, Plateau> plateaus = new HashMap<>();
 
     private PlateauRepository() {}
 
     public static PlateauRepository getInstance() {
-        return REPOSITORY;
+        if(repository == null)
+            repository = new PlateauRepository();
+
+        return repository;
+    }
+
+    public static void resetInstance() {
+        repository = new PlateauRepository();
     }
 
     public void addPlateau(Plateau plateau) {

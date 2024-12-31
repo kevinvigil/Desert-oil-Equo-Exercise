@@ -21,6 +21,7 @@ public class ExerciseServer {
     private static final Logger log = Logger.getLogger(ExerciseServer.class.getName());
     private DroneService droneService;
     private PlateauService plateauService;
+    private HttpServer server;
 
     public ExerciseServer(DroneService droneService, PlateauService plateauService) {
         this.droneService = droneService;
@@ -28,30 +29,29 @@ public class ExerciseServer {
 
     }
 
+    public void stop() {
+        server.stop(0);
+    }
+
     public void start(int port) {
         try {
-        HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
-            // Generic context for paths starting with "/plateau"
+        server = HttpServer.create(new InetSocketAddress(port), 0);
             server.createContext("/plateau", exchange -> {
                 String path = exchange.getRequestURI().getPath();
-
-//                if (path.matches("/plateau/drone/.+")) {
-//                    patchDroneRequest(exchange, fromString(path.split("/")[3])); // Handle specific path for PATCH
-//                } else
                 if (path.matches("/plateau/.+/drone")) {
-                    postDroneRequest(exchange, fromString(path.split("/")[2])); // Handle specific path for POST
+                    postDroneRequest(exchange, fromString(path.split("/")[2]));
                 } else if (path.equals("/plateau")) {
                     postPlateauRequest(exchange); // Handle /plateau
                 } else {
-                    exchange.sendResponseHeaders(404, -1); // Not found
+                    exchange.sendResponseHeaders(404, -1);
                 }
             });
             server.createContext("/drone", exchange -> {
                 String path = exchange.getRequestURI().getPath();
                 if (path.matches("/drone/.+/move")) {
-                    patchDroneRequest(exchange, fromString(path.split("/")[2])); // Handle specific path for PATCH
+                    patchDroneRequest(exchange, fromString(path.split("/")[2]));
                 } else {
-                    exchange.sendResponseHeaders(404, -1); // Not found
+                    exchange.sendResponseHeaders(404, -1);
                 }
             });
         server.setExecutor(null);
@@ -89,13 +89,6 @@ public class ExerciseServer {
             throw new RuntimeException(e);
         }
     }
-
-    /*
-     - Crear tests
-     - Capa de Servicio que es la que ejecuta y devuelve un resultado
-     - Capa de Comunicacion que es la que hace lo mapeos :
-        recivis String, lo transformas a Plateau, Drone, etc y llamas a la capa de servicio
-     */
 
     private void postDroneRequest(HttpExchange httpExchange, UUID plateauId) throws IOException {
         try {
@@ -154,9 +147,9 @@ public class ExerciseServer {
             String responseStr = "Plateau created";
             log.info(responseStr);
             httpExchange.getResponseHeaders().set("Content-Type", "text/plain");
-            httpExchange.sendResponseHeaders(200, responseStr.getBytes().length);
+            httpExchange.sendResponseHeaders(200, plateau.id().toString().length());
             OutputStream os = httpExchange.getResponseBody();
-            os.write(responseStr.getBytes());
+            os.write(plateau.id().toString().getBytes());
             os.close();
         } catch (Exception e) {
             StringWriter sw = new StringWriter();

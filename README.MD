@@ -14,6 +14,8 @@ operate within the specified area.
 The solution is divided into two modules to maintain clarity and good organization:
 
 ### Core Module
+This module resolved the base exercise modeling challenges in plain Java.
+
 This module contains the system's core logic:
 
 **Drone**: Represents the drone with its current position, orientation, and the rules governing its movement.
@@ -23,7 +25,7 @@ This module contains the system's core logic:
 **Movement Logic**: Contains the rules for interpreting commands and updating the drone's position.
 
 ### REST API Module
-This module implements the user interface through a REST API:
+This module implements the user interface through a REST API in order to solve the extension exercise challenges:
 
 It allows users to interact with the system, such as setting up the plateau and controlling the drone.
 It includes input validation and error handling to ensure robust interactions.
@@ -31,16 +33,61 @@ It includes input validation and error handling to ensure robust interactions.
 ### API Endpoints
 
 #### Configure Plateau
-- **POST** `/plateau`
-- Description: Configures the plateau dimensions.
+
+Configures the plateau dimensions.
+```
+POST {HOST}/plateau
+
+Request:
+{maxX} {maxY}
+
+Response:
+{PlateauId}
+
+Example:
+
+curl --location --request POST '{HOST}/plateau' \
+--header 'Content-Type: text/plain' \
+--data-raw '5 5'
+``` 
 
 #### Get Drone Position
-- **POST** `/plateau/{plateauId}/drone`
-- Description: Place the drone in a specific position on the plateau.
+
+Place drone in specific position on the plateau.
+```
+POST {HOST}/plateau/{plateauId}/drone
+
+Request: 
+{X} {Y} {Direction}
+
+Response:
+{DroneID}
+
+Example:
+
+curl --location --request POST '{HOST}/plateau/{plateauId}/drone' \
+--header 'Content-Type: text/plain' \
+--data-raw '1 2 N'
+```
 
 #### Move Drone
-- **POST** `/drone/move/{droneId}`
-- Description: Moves the drone according to the given commands and initial position.
+
+Moves the drone according to the given commands and initial position.
+```
+POST {HOST}/drone/{droneId}/move
+
+Request:
+{List of movements}
+
+Response:
+{Final position}
+
+Example:
+
+curl --location --request POST '{HOST}/drone/{droneId}/move' \
+--header 'Content-Type: text/plain' \
+--data-raw 'LMLMLMLMM'
+```
 
 ## Movement Commands
 
@@ -50,24 +97,33 @@ The drone accepts individual commands that determine its movement or orientation
 - `R`: Turn 90° right.
 - `M`: Move forward in the current direction.
 
-### Example
-If the drone is at position (3, 3, N) and receives the command LMLMLMLMM, it will move and end up at position (3, 4, N).
+[//]: # (## Test Input:)
 
+[//]: # ()
+[//]: # ()
+[//]: # (- Plateau dimensions `5 5` )
 
-## Test Input:
+[//]: # ()
+[//]: # ()
+[//]: # (  1. Drone initial position: `1 2 N`)
 
-- Plateau dimensions `5 5` 
+[//]: # ()
+[//]: # ()
+[//]: # (     - Movements: `LMLMLMLMM`)
 
+[//]: # ()
+[//]: # (  )
+[//]: # (     - Drone final position `1 3 N`)
 
-  1. Drone initial position: `1 2 N`
+[//]: # ()
+[//]: # ()
+[//]: # ()
+[//]: # (  2. Drone initial position `3 3 E`)
 
-     - Movements: `LMLMLMLMM`
-  
-     - Drone final position `1 3 N`
+[//]: # ()
+[//]: # ()
+[//]: # (     - Movements: `MMRMMRMRRM`)
 
-
-  2. Drone initial position `3 3 E`
-
-     - Movements: `MMRMMRMRRM`
-
-     - Drone final position `5 1 E`
+[//]: # ()
+[//]: # ()
+[//]: # (     - Drone final position `5 1 E`)

@@ -7,14 +7,22 @@ import java.util.logging.Logger;
 
 public class DroneRepository {
     Logger log = Logger.getLogger(DroneRepository.class.getName());
-    private static final DroneRepository REPOSITORY = new DroneRepository();
+    private static DroneRepository repository = null;
 
     private Map<UUID, Drone> drones = new HashMap<>();
 
-    private DroneRepository() {}
+    private DroneRepository() {
+    }
 
     public static DroneRepository getInstance() {
-        return REPOSITORY;
+        if (repository == null)
+            repository = new DroneRepository();
+
+        return repository;
+    }
+
+    public static void resetInstance() {
+        repository = new DroneRepository();
     }
 
     public void addDrone(Drone drone) {
